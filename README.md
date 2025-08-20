@@ -17,7 +17,7 @@ This project uses a `TfidfVectorizer` for feature extraction and an ensemble of 
 ## Directory Structure
 
 ```
-└── mukku27-smart-support-categorizer/
+└──smart-support-categorizer/
     ├── README.md
     ├── data_preparation.py
     ├── main.py
