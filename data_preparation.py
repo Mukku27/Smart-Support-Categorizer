@@ -2,7 +2,6 @@
 import pandas as pd
 import random
 import numpy as np
-from datetime import datetime, timedelta
 
 def generate_support_tickets(num_samples=250):
     """
@@ -93,7 +92,7 @@ def generate_support_tickets(num_samples=250):
 
 if __name__ == "__main__":
     # Generate dataset
-    df = generate_support_tickets(500)
+    df = generate_support_tickets(300)
     
     # Shuffle the data
     df = df.sample(frac=1).reset_index(drop=True)
