@@ -129,6 +129,20 @@ curl -X POST "https://smart-support-categorizer.onrender.com/predict" \
 -H "Content-Type: application/json" \
 -d '{"text": "I was charged twice for my monthly subscription"}'
 ```
+**Example Response:**
+
+A successful request will return a JSON response like this:
+```json
+{
+  "prediction": "Billing",
+  "confidence": 0.9950023293495178,
+  "probabilities": {
+    "Other": 0.0028319049160927534,
+    "Technical": 0.0021657028701156378,
+    "Billing": 0.9950023293495178
+  }
+}
+```
 
 > **Note:** This is hosted on a free Render instance. The service will **spin down after 15 minutes of inactivity**. The first request after a period of inactivity will be delayed by **30-50 seconds or more** while the server restarts. Subsequent requests will be fast.
 
