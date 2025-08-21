@@ -1,0 +1,9 @@
+{
+  "prediction": "Technical",
+  "confidence": 0.9686,
+  "probabilities": {
+    "Technical": 0.9686,
+    "Billing": 0.0181,
+    "Other": 0.0133
+  }
+}
