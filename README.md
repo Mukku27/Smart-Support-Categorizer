@@ -25,6 +25,7 @@ This project uses a `TfidfVectorizer` for feature extraction and an ensemble of 
     ├── requirements.txt
     └── data/
         └── support_tickets.csv
+
 ```
 
 ## Getting Started
@@ -112,6 +113,25 @@ The API is self-documenting thanks to FastAPI. You can access the interactive AP
       }
     }
     ```
+
+## Live Demo on Render
+
+The API is deployed on Render for live testing and demonstration.
+
+**Base URL**: `https://smart-support-categorizer.onrender.com`
+
+You can interact with the live API using the `/predict` endpoint.
+
+**Example `curl` Request:**
+
+```bash
+curl -X POST "https://smart-support-categorizer.onrender.com/predict" \
+-H "Content-Type: application/json" \
+-d '{"text": "I was charged twice for my monthly subscription"}'
+```
+
+> **Note:** This is hosted on a free Render instance. The service will **spin down after 15 minutes of inactivity**. The first request after a period of inactivity will be delayed by **30-50 seconds or more** while the server restarts. Subsequent requests will be fast.
+
 
 ## How It Works
 
