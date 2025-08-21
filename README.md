@@ -18,13 +18,17 @@ This project uses a `TfidfVectorizer` for feature extraction and an ensemble of 
 
 ```
 └──smart-support-categorizer/
-    ├── README.md
     ├── data_preparation.py
     ├── main.py
     ├── model_training.py
-    ├── requirements.txt
+    ├── model/
+    │   ├── ensemble_model.pth
+    ├── prediction_example.json
+    |── requirements.txt
+    ├── README.md
     └── data/
         └── support_tickets.csv
+
 
 ```
 
